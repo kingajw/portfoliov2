@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kinga Wałaszek portfolio</title>
+</head>
+<body>
+<!-- navigation drop-down list for mobile -->
+<div class="dropdown">
+    <nav>
+        <a href="#" id="menu">MENU</a>
+        <ul class="drop-menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- navigation bar for desktop -->
+<div class="navbar">
+    <div class="col-1">
+    </div>
+    <div class="col-2">
+        <a href="#home">HOME</a>
+    </div>
+    <div class="col-2">
+        <a href="#about">ABOUT ME</a>
+    </div>
+    <div class="col-2">
+        <a href="#skills">SKILLS</a>
+    </div>
+    <div class="col-2">
+        <a href="#projects">PROJECTS</a>
+    </div>
+    <div class="col-2">
+        <a href="#contact">CONTACT</a>
+    </div>
+</div>
+<section id="home">
+    <div class="col-12 center">
+        <h1>Kinga Wałaszek</h1>
+        <hr>
+        <h2>Front-end developer</h2>
+    </div>
+</section>
+<section id="about" class="light-background">
+    <div class="col-11">
+        <div class="col-8">
+            <h1>ABOUT ME</h1>
+            <p>Hello, my name is Kinga. Until now I've been a air quality modeller at the University of Wrocław. I've been working with a meteorological model written in Fortran and C++. I have experience with bash scripting, R, vim and a little bit of python and NCL.</p>
+            <p>To be able to better understand atmospheric processes, I studied physics at Wrocław University of Technology and Science,
+                where I also learned the basics of Fortran and objective programming in C++.</p>
+            <p>For the last few months, I have been learning HTML5/CSS3 and Javascript after hours. I always fully commit to every project I work on. I enjoy learning new technologies, and my latest tech crush is Vue :)</p>
+        </div>
+    </div>
+</section>
+<section id="skills" class="dark-background">
+    <div class="section-title">
+        <h1>MY SKILLS</h1>
+    </div>
+    <div class="skills-items">
+        <div class="tooltip">
+            <img class="skills-icon" src="HTML5.png"><span>HTML5</span>
+        </div>
+        <div class="tooltip">
+            <img class="skills-icon" src="css.png"><span>CSS3</span>
+        </div>
+        <div class="tooltip">
+            <img class="skills-icon" src="rwd.png"><span>Responsive Web Design</span>
+        </div>
+        <div class="tooltip">
+            <img class="skills-icon" src="bootstrap.png"><span>Bootstrap</span>
+        </div>
+        <div class="tooltip">
+            <img class="skills-icon" src="sass.png"><span>Sass</span>
+        </div>
+        <div class="tooltip">
+            <img class="skills-icon" src="js.png"><span>JavaScript</span>
+        </div>
+        <div class="tooltip">
+            <img class="skills-icon" src="jquery.png"><span>jQuery</span>
+        </div>
+        <div class="tooltip">
+            <img class="skills-icon" src="git.png"><span>GIT</span>
+        </div>
+    </div>
+    <div class="text-center">
+        <h1>NOW LEARNING</h1>
+    </div>
+    <div class="skills-items">
+        <div class="tooltip">
+            <img class="skills-icon" src="vue.png"><span>VUE.js</span>
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <div class="section-title">
+        <h1>PROJECTS</h1>
+    </div>
+    <div class="col-4">
+        <a href="skrytki" target="_blank"><img src="pogoda.png" alt="Skrytki">
+            <div class="overlay">
+                <h1>Skrytki</h1>
+                <p>First project made for practicing JavaScript arrays</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-4">
+        <a href="pogoda" target="_blank"><img src="pogoda.png" alt="Prognoza pogody">
+            <div class="overlay">
+                <h1>Prognoza pogody</h1>
+                <p>Weather forecast using AccuWeather API and D3.js</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-4">
+        <a href="Pixel Art Maker" target="_blank"><img src="pogoda.png" alt="Pixel painting">
+            <div class="overlay">
+                <h1>Pixel Art Maker</h1>
+                <p>Final project of Google Web Development Scholarship, made using jQuery</p>
+            </div>
+        </a>
+    </div>
+</section>
+<section id="contact">
+    <div class="section-title">
+        <h1>CONTACT ME</h1>
+    </div>
+    <div class="col-2"></div>
+    <div id="contact-form" class="col-8">
+        <form method="post" action="send_form_email.php">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Your name">
+            <label>E-mail:</label>
+            <input type="text" name="email" placeholder="Your e-mail">
+            <label>Title:</label>
+            <input type="text" name="title" placeholder="Message title">
+            <label>Message:</label>
+            <textarea name="message" placeholder="Type your message here"></textarea>
+            <input id="send-button" type="submit" name="send" value="SEND" />
+        </form>
+    </div>
+    <div id="follow" class="col-2">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/kingawalaszek/" class="fa social fa-linkedin"></a></li>
+            <li><a href="https://www.facebook.com/kingawalaszek" class="fa social fa-facebook"></a></li>
+            <li><a href="https://github.com/kingajw" class="fa social fa-github"></a></li>
+            <li><a href="mailto:kinga.j.walaszek@gmail.com" class="fa social fa-envelope"></a></li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>

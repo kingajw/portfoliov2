@@ -1,0 +1,298 @@
+$a-tags: 'a, a:active, a:hover, a:visited'
+
+*
+  box-sizing: border-box
+
+body
+  height: 100%
+  background: url('bg_blurred_wide.jpg') no-repeat top center fixed
+  background-size: cover
+  margin: 0
+  padding: 0
+  font-family: 'Quicksand', sans-serif
+
+[class*="col-"]
+  width: 100%
+
+@media only screen and (min-width: 768px)
+  .col-1
+    width: 8.33%
+  .col-2
+    width: 16.66%
+  .col-3
+    width: 25%
+  .col-4
+    width: 33.33%
+  .col-5
+    width: 41.66%
+  .col-6
+    width: 50%
+  .col-7
+    width: 58.33%
+  .col-8
+    width: 66.66%
+  .col-9
+    width: 75%
+  .col-10
+    width: 83.33%
+  .col-11
+    width: 91.66%
+  .col-12
+    width: 100%
+  #about
+    background-color: #000033
+    .col-11
+      background: url("IMG_9784.jpg") no-repeat top right border-box
+      margin: 10vh 5vw 5vh 5vw
+      height: 85vh
+      .col-8
+        background-color: rgba(255,255,255,0.5)
+        position: relative
+        top: 25%
+
+[class*="col-"]
+  float: left
+  padding: 15px
+
+section
+  height: 100vh
+  margin: 0
+  padding: 0
+
+h1, h2
+  font-size: 250%
+
+.dropdown ul, #menu
+  display: none
+.navbar
+  display: none
+
+@media only screen and (max-width: 768px)
+  nav
+    position: fixed
+    z-index: 5
+    width: 100vw
+    background-color: rgba(0,0,51,0.7)
+    text-align: center
+    #menu
+      display: block
+      padding: 5px 0
+      font-weight: bold
+    a
+      text-decoration: none
+      color: #ffedf0
+    li
+      padding: 5px 0
+    li:hover
+      font-weight: bold
+  nav:hover ul
+    display: block
+    list-style-type: none
+    padding-left: 0
+  form
+    label
+      font-size: small
+  #follow
+    li
+      display: inline
+
+
+@media only screen and (min-width: 768px)
+  .navbar
+    display: inline
+    position: fixed
+    width: 100vw
+    z-index: 5
+    background-color: rgba(0,0,51,0.7)
+    .col-2
+      text-align: center
+      a
+        text-decoration: none
+        color: #ffedf0
+      a:hover
+        font-weight: bold
+
+#home
+  h1, h2
+    text-align: center
+    text-transform: uppercase
+    color: #003
+
+hr
+  border: 0
+  height: 2px
+  width: 50vw
+  background-image: linear-gradient(to right, rgba(0, 0, 51, 0), rgba(0, 0, 51, 0.75), rgba(0, 0, 51, 0))
+
+.center
+  position: absolute
+  top: 50%
+  transform: perspective(1px) translateY(-50%)
+
+.text-center
+  text-align: center
+
+.section-title
+  text-align: center
+  padding-top: 10vh
+  color: #ffedf0
+
+.dark-background
+  color: #ffedf0
+  background-color: #003
+
+.light-background
+  color: #003
+  background-color: #fafafa
+
+.skills-items
+  margin: 5vh 5vw
+  display: -webkit-flex /* Safari */
+  -webkit-justify-content: space-around /* Safari 6.1+ */
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+.skills-icon
+  max-width: 8vw
+  max-height: 8vw
+  margin: 3vw 1vw
+  width: auto
+  height: auto
+
+.tooltip
+  position: relative
+  display: inline-block
+  span
+    visibility: hidden
+    width: 120px
+    background-color: #32325b
+    color: #ffedf0
+    text-align: center
+    padding: 5px 0
+    border-radius: 6px
+    /* Position the tooltip text */
+    position: absolute
+    z-index: 1
+    bottom: 90%
+    left: 50%
+    margin-left: -60px
+    /* Fade in tooltip */
+    opacity: 0
+    transition: opacity 0.5s
+
+.tooltip:hover span
+  visibility: visible
+  opacity: 1
+
+.tooltip span:after
+  content: ""
+  position: absolute
+  top: 100%
+  left: 50%
+  margin-left: -5px
+  border: 5px solid
+  border-color: #32325b transparent transparent transparent
+
+#projects
+  background: linear-gradient(to bottom, rgba(0,0,51,1) 0%,rgba(0,0,51,1) 75%,rgba(0,0,51,0) 100%)
+
+#projects .col-4, .overlay
+  text-align: center
+
+#projects img, .overlay
+  transition: .5s all
+  border-radius: 3px
+
+#projects .col-4
+  position: relative
+  color: #ffedf0
+  img
+    width: 100%
+  .overlay
+    position: absolute
+    z-index: 2
+    opacity: 0
+    color: #003
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    h1
+      font-size: 2vmax
+    p
+      font-size: 1.5vmax
+  &:hover
+    .overlay
+      opacity: 1
+    img
+      filter: blur(2px)
+
+form
+  border-radius: 10px
+  padding: 5vh 1vw
+  background-color: #003
+  color: #ffedf0
+  textarea
+    min-height: 80px
+  input, textarea
+    width: 75%
+    margin-right: 10px
+    padding: 1% 1% 1% 1%
+    border-radius: 5px
+    border-width: 0
+    margin-bottom: 5px
+    background-color: #ffedf0
+    font-family: "Quicksand", sans-serif
+  label
+    float: left
+    width: 15%
+    margin-top: 5px
+    margin-left: 5%
+  #send-button
+    color: #ffedf0
+    background-color: #003
+    border: #ffedf0 solid thin
+    cursor: pointer
+    width: 75%
+    border-radius: 5px
+    margin-left: 20%
+    font-family: "Quicksand", sans-serif
+    font-weight: bold
+  #send-button:hover
+    color: #003
+    background-color: #ffedf0
+
+
+#follow ul
+  list-style-type: none
+  padding-left: 0
+
+.social
+  padding: 8px
+  margin: 5px
+  font-size: 25px
+  width: 40px
+  height: 40px
+  text-align: center
+  text-decoration: none
+  border-radius: 50%
+
+.social:hover
+  opacity: 0.7
+
+.fa-facebook
+  background: #3B5998
+  color: white
+
+.fa-linkedin
+  background: #007bb6
+  color: white
+
+.fa-github
+  background: #000
+  color: white
+
+.fa-envelope
+  background: darkred
+  color: white
+  font-size: 22px
